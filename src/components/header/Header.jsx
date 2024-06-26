@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+//import { Link } from 'react-router-dom';
 import './Header.css';
 import profPic from  '../../img/proficon.png'
 import tonSymbol from  '../../img/ton_symbol.svg'

@@ -1,6 +1,5 @@
 import React from "react";
 
-import s from './WheelMain.module.css';
 import WheelComponent from "../WheelComponent/WheelComponent.jsx";
 
 const WheelMain = () =>{
