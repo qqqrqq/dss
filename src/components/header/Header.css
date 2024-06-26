@@ -1,0 +1,38 @@
+header{
+    background: #424968;
+    width: 600px;
+    display: flex;
+    height: 40px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    align-items: center;
+    padding:0px 10px; 
+    justify-content: space-between;
+}
+.header_info{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.header_info p {
+    margin-left: 5px;
+}
+.header_profile_pic{
+    height: 20px;
+}
+.wallet_header_info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: 30px;
+
+}
+.wallet_header_info img{
+    scale: 8;
+
+    margin-bottom: 0px;
+}
+.wallet_header_info p{
+    margin-right: 2px;
+}
