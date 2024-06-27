@@ -4,8 +4,8 @@
 #root {
 
   width: 100%;
+  height: var(--tg-viewport-stable-height)
 
-  
 }
 body{
   background: var(--tg-theme-bg-color);
