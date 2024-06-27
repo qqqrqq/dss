@@ -3,14 +3,17 @@ nav {
   
     display: block;
     height: 50px;
-    border-radius: 25px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 ul{
   display: flex;
 
+  padding: 0;
   justify-content: space-around;
   height: 100%;
+
 }
 ul li{
     list-style-type: none;
