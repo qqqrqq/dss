@@ -19,7 +19,12 @@ function App() {
     tg.expand()
     console.log(tg)
   
-    tg.setHeaderColor('#cf0a0a')
+    tg.setHeaderColor('#000000')
+    tg.MainButton.isActive = true;
+    tg.MainButton.text = '123'
+    tg.MainButton.color = '#000000'
+
+
   },[])
 
   return (

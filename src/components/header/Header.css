@@ -1,5 +1,6 @@
 header{
-    background: #626ea1;
+   /* background: #626ea1;*/
+   background: black;
 
     display: flex;
     height: 40px;
