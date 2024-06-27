@@ -19,7 +19,7 @@ function App() {
     tg.expand()
     console.log(tg)
     tg.SettingsButton.hide()
-
+    tg.MainButton.color = 'red'
   },[])
 
   return (
