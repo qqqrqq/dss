@@ -18,8 +18,8 @@ function App() {
     tg.ready()
     tg.expand()
     console.log(tg)
-    tg.SettingsButton.hide()
-    tg.MainButton.color = '#cf0a0a'
+  
+    tg.setHeaderColor('#cf0a0a')
   },[])
 
   return (
