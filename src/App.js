@@ -18,7 +18,7 @@ function App() {
     tg.ready()
     tg.expand()
     console.log(tg)
-    console.log(tg.expand())
+    
 
   },[])
 
@@ -26,6 +26,8 @@ function App() {
     <Router>
       <div className='main'>
         <Header/>
+        <p>Heaight {tg.viewportHeight}</p>
+        <p>Wigth {window.innerWidth}</p>
         <Routes>
           <Route exact path={'/'} element={<MainPage />} />
           <Route exact path={'/page2'} element={<PlayPages />} />
