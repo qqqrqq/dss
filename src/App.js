@@ -16,8 +16,8 @@ function App() {
 
   useEffect(()=>{
     tg.ready()
-    tg.expand()
-    console.log(tg)
+   // tg.expand()
+ 
     
 
   },[])
