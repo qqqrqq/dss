@@ -15,8 +15,11 @@ const tg = window.Telegram.WebApp
 function App() {
 
   useEffect(()=>{
-    tg.ready()
-    tg.isExpanded = true
+    tg.ready(()=>{
+      console.log(tg)
+      console.log(tg.expand())
+    })
+
   },[])
 
   return (
