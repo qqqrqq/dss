@@ -10,6 +10,7 @@ import MainPage from './components/pages/MainPage/MainPage.jsx';
 import Menu from './components/menu/Menu.jsx';
 import Header from './components/header/Header.jsx';
 import PlayPages from './components/pages/PlayPages/PlayPages.jsx';
+import ton from './img/ton_symbol.svg'
 const tg = window.Telegram.WebApp
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
         <Header/>
         <p>Heaight {tg.viewportHeight}</p>
         <p>Wigth {window.innerWidth}</p>
+  
         <Routes>
           <Route exact path={'/'} element={<MainPage />} />
           <Route exact path={'/page2'} element={<PlayPages />} />

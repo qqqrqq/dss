@@ -30,10 +30,10 @@ header{
 
 }
 .wallet_header_info img{
-    scale: 8;
-
+ 
+  
     margin-bottom: 0px;
 }
 .wallet_header_info p{
-    margin-right: 2px;
+    margin-right: 8px;
 }
