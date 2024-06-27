@@ -17,8 +17,7 @@ function App() {
   useEffect(()=>{
     tg.ready()
     tg.expand()
-    tg.MainButton.hide()
-    
+    tg.headerColor = 'red'
 
   },[])
 
