@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './App.css';
 import {
   BrowserRouter as Router,
@@ -10,7 +10,16 @@ import MainPage from './components/pages/MainPage/MainPage.jsx';
 import Menu from './components/menu/Menu.jsx';
 import Header from './components/header/Header.jsx';
 import PlayPages from './components/pages/PlayPages/PlayPages.jsx';
+const tg = window.Telegram.WebApp
+
 function App() {
+
+  useEffect(()=>{
+    tg.ready(()=>{
+      tg.expand()
+    })
+  },[])
+
   return (
     <Router>
       <div className='main'>
