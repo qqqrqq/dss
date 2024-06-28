@@ -5,7 +5,7 @@
 .wheel-container{
     height: 1400px;
     width: 1000px;
-    top: -150%;
+    top: -140%;
     position: absolute;
     left: 20%;
    z-index: -5;
