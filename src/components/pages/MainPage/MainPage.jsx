@@ -8,7 +8,7 @@ const MainPage = () =>{
     return(
         <div className="mainpage">
             <div className="data">
-          
+             {tg.initDataUnsafe.user.first_name}
             </div>
            
             <WheelMain/>
