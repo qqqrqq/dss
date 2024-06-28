@@ -3,13 +3,12 @@
 }
 #root {
 
-<<<<<<< HEAD
+
   width: 100%;
 
   height: 100vh;
   overflow:hidden;
-=======
->>>>>>> 6b6ba61604ab1b87382baf390db4611519b92fc2
+
 }
 body{
   background: var(--tg-theme-bg-color);
