@@ -29,13 +29,6 @@ function App() {
     <Router>
       <div className='main'>
         <Header/>
-<<<<<<< HEAD
-        
-=======
-        <p>Heaight {tg.viewportHeight}</p>
-        <p>Wigth {window.innerWidth}</p>
-  
->>>>>>> 6b6ba61604ab1b87382baf390db4611519b92fc2
         <Routes>
           <Route exact path={'/'} element={<MainPage />} />
           <Route exact path={'/page2'} element={<PlayPages />} />
