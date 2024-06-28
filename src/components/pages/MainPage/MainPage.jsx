@@ -7,6 +7,8 @@ const MainPage = () =>{
     return(
         <div className="mainpage">
             {tg?.version}
+            {tg?.platform}
+            {tg?.initData}
             <WheelMain/>
         </div>
     )
