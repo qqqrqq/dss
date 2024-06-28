@@ -4,9 +4,9 @@ nav {
 
   
     display: block;
-    position: fixed;
+    margin-top: auto;
     bottom: 0;
-    height: 50px;
+    z-index: 2;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     width: 100%;

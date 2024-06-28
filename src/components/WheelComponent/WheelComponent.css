@@ -3,8 +3,11 @@
     position: relative;
 }
 .wheel-container{
-    height: 300px;
-  
-  
-    margin: auto;
+    height: 1400px;
+    width: 1000px;
+    top: -150%;
+    position: absolute;
+    left: 20%;
+   z-index: -5;
+   
 }

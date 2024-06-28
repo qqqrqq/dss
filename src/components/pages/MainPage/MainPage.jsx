@@ -1,9 +1,9 @@
 import React from "react";
 import WheelMain from "../../WheelMain/WheelMain.jsx";
-
+import './MainPage.css'
 const MainPage = () =>{
     return(
-        <div>
+        <div className="mainpage">
           
             <WheelMain/>
         </div>

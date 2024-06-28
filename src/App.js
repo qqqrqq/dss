@@ -20,10 +20,7 @@ function App() {
     console.log(tg)
   
     tg.setHeaderColor('#000000')
-    tg.MainButton.isActive = true;
-    tg.MainButton.text = '123'
-    tg.MainButton.color = '#000000'
-
+ 
 
   },[])
 
@@ -31,8 +28,7 @@ function App() {
     <Router>
       <div className='main'>
         <Header/>
-        <p>Heaight {tg.viewportHeight}</p>
-        <p>Wigth {window.innerWidth}</p>
+        
         <Routes>
           <Route exact path={'/'} element={<MainPage />} />
           <Route exact path={'/page2'} element={<PlayPages />} />
