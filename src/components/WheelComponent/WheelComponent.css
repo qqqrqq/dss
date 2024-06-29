@@ -1,6 +1,10 @@
+.container{
+    position: relative;
+}
 .mainwheel_container{
     height: 300px;
-    position: relative;
+    
+    
 }
 .wheel-container{
     height: 1400px;
