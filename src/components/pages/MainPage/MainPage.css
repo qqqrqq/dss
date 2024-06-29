@@ -6,6 +6,12 @@
 .data{
  
 }
+.mainpage_info-amount{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
 .mainpage_info-user{
    display: flex;
    flex-direction: column;
@@ -18,4 +24,9 @@
 .mainpage_info-user img{
    height: 50px;
    width: 50px;
+}
+.mainpage_info-amount img{
+   height: 30px;
+   width: 30px;
+   margin-left: 7px;
 }
