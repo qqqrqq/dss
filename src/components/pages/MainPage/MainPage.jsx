@@ -8,7 +8,7 @@ const MainPage = (props) =>{
     const location = useLocation()
    useEffect(()=>{
        props.setHeader(false)
-   },[location])
+   },[location, props])
   
     return(
         <div className="mainpage">

@@ -7,7 +7,7 @@ const PlayPages = (props) =>{
     
     useEffect(()=>{
      props.setHeader(true)
-    },[location])
+    },[location, props ])
     return(
         <div className="playpages">
             <div className="playpages-item">
