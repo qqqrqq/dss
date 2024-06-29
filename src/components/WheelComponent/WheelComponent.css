@@ -9,9 +9,9 @@
 .wheel-container{
     height: 1400px;
     width: 1000px;
-    top: -140%;
+    top: -250%;
     position: absolute;
-    left: 20%;
+    left: 15%;
    z-index: -5;
    
 }
