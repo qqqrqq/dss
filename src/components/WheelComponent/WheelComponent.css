@@ -1,5 +1,5 @@
 .container{
-    position: relative;
+
 }
 .mainwheel_container{
     height: 300px;
@@ -8,10 +8,15 @@
 }
 .wheel-container{
     height: 1400px;
-    width: 1000px;
-    top: -250%;
-    position: absolute;
-    left: 15%;
+   
+   width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    padding: 0;
+    left: 200px;
+    top: -230px;
    z-index: -5;
    
 }
