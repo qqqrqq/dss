@@ -4,7 +4,6 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  useLocation,
 } from 'react-router-dom';
 import MainPage from './components/pages/MainPage/MainPage.jsx';
 
