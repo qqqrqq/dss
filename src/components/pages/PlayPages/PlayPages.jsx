@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import './PlayPages.css'
+import { useLocation } from "react-router-dom";
 
-const PlayPages = () =>{
+const PlayPages = (props) =>{
+    const location = useLocation()
+    
+    useEffect(()=>{
+     props.setHeader(true)
+    },[location])
     return(
         <div className="playpages">
             <div className="playpages-item">

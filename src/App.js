@@ -1,9 +1,10 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 import {
   BrowserRouter as Router,
   Routes,
   Route,
+  useLocation,
 } from 'react-router-dom';
 import MainPage from './components/pages/MainPage/MainPage.jsx';
 
@@ -14,26 +15,27 @@ import PlayPages from './components/pages/PlayPages/PlayPages.jsx';
 const tg = window.Telegram.WebApp
 
 function App() {
+  const [header, setHeader] = useState(false)
 
   useEffect(()=>{
+    setHeader(false)
     tg.ready()
     tg.expand()
-    console.log(tg)
-  
     tg.setHeaderColor('#000000')
- 
 
   },[])
+
+
 
   return (
     <Router>
       <div className='main'>
-        <Header/>
+         {header ? <Header/> : ''}
         <Routes>
-          <Route exact path={'/'} element={<MainPage />} />
-          <Route exact path={'/page2'} element={<PlayPages />} />
+          <Route exact path={'/'} element={<MainPage setHeader={setHeader} />} />
+          <Route exact path={'/page2'} element={<PlayPages setHeader={setHeader} />} />
         </Routes>
-        <Menu />
+        <Menu setHeader={setHeader}/>
       </div>
     </Router>
 
