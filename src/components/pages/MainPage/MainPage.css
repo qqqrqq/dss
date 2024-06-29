@@ -8,9 +8,14 @@
 }
 .mainpage_info-user{
    display: flex;
+   flex-direction: column;
    justify-content: center;
    align-items: center;
    height: 100%;
    width: 50%;
-   
+ 
+}
+.mainpage_info-user img{
+   height: 50px;
+   width: 50px;
 }
