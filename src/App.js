@@ -10,7 +10,7 @@ import MainPage from './components/pages/MainPage/MainPage.jsx';
 import Menu from './components/menu/Menu.jsx';
 import Header from './components/header/Header.jsx';
 import PlayPages from './components/pages/PlayPages/PlayPages.jsx';
-
+import Room from './components/pages/Room/Room.jsx';
 const tg = window.Telegram.WebApp
 
 function App() {
@@ -33,6 +33,8 @@ function App() {
         <Routes>
           <Route exact path={'/'} element={<MainPage setHeader={setHeader} />} />
           <Route exact path={'/page2'} element={<PlayPages setHeader={setHeader} />} />
+          <Route exact path={'/room'} element={<Room setHeader={setHeader} />} />
+          
         </Routes>
         <Menu setHeader={setHeader}/>
       </div>

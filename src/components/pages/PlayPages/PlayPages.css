@@ -3,3 +3,10 @@
     display: flex;
     flex-wrap: wrap;
 }
+.room_btn{
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    background:burlywood;
+    border: none;
+}
