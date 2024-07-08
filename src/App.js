@@ -21,8 +21,7 @@ function App() {
     tg.ready()
     tg.expand()
     tg.setHeaderColor('#000000')
-    const user= tg.initDataUnsafe?.user;
-    setUserData(user)
+ 
   },[])
 
 
