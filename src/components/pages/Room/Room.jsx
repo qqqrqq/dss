@@ -3,41 +3,42 @@ import io from 'socket.io-client';
 import './Room.css';
 
 const Room = (props) => {
-    const socket = io.connect('http://localhost:3001');
+
     const [currentRoom, setCurrentRoom] = useState(null);
     const [clients, setClients] = useState([]);
-
+    const [userData, setUserData] = useState(null)
     const room = 1;
 
-
     useEffect(() => {
-        
-    const joinRoom = () => {
-        if (room !== '') {
-            socket.emit('join_room', room);
-        }
-    };
+        const newSocket = io.connect('https://aa75ed01-6187-4024-8e22-8e8f0f974aa6-00-x63d1rwkgnee.sisko.replit.dev/:3001');
+          const tg = window.Telegram.WebApp
+          const user= tg.initDataUnsafe?.user;
+          setUserData(user)
+        const joinRoom = () => {
+            if (room !== '') {
+                newSocket.emit('join_room', {room , userData});
+            }
+        };
+
         joinRoom();
-     
-        socket.on('room_info', ({ room, clients }) => {
+
+        newSocket.on('room_info', ({ room, clients }) => {
             setCurrentRoom(room);
             setClients(clients);
         });
-       
-        socket.on('clients_updated', (clients) => {
-     
+
+        newSocket.on('clients_updated', (clients) => {
             setClients(clients);
         });
-       
+
         // Функция очистки эффекта
         return () => {
-            socket.off('room_info');
-            socket.off('clients_updated');
+            newSocket.off('room_info');
+            newSocket.off('clients_updated');
+            newSocket.disconnect();
         };
-    }, [socket]); // Пустой массив зависимостей, чтобы эффект выполнился только один раз
+    }, [userData]); // Пустой массив зависимостей, чтобы эффект выполнился только один раз
 
-
-    
     return (
         <div>
             <p>Room: {currentRoom}</p>

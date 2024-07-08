@@ -5,7 +5,8 @@ import { Link } from 'react-router-dom';
 
 const PlayPages = (props) =>{
     const location = useLocation()
-    
+
+   
     useEffect(()=>{
      props.setHeader(true)
 
