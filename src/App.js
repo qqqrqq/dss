@@ -21,7 +21,7 @@ function App() {
     tg.ready()
     tg.expand()
     tg.setHeaderColor('#000000')
- 
+    setUserData()
   },[])
 
 
