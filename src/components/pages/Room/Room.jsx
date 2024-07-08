@@ -44,7 +44,7 @@ const Room = (props) => {
             <div>
                 <p>Users:</p>
                 <ul>
-                    {clients.length === 0 ? 'Loading!': clients.map((client, index) => (
+                    {clients.map((client, index) => (
                         <li key={index}>{client}</li>
                     ))}
                 </ul>
