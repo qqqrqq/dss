@@ -23,7 +23,7 @@ function App() {
     tg.setHeaderColor('#000000')
    
     const user= tg.initDataUnsafe?.user;
-    console.log(user)
+
    
     setUserData(user)
   },[])
@@ -33,14 +33,14 @@ function App() {
   return (
     <Router>
       <div className='main'>
-         {header ? <Header/> : ''}
+         {header ? <Header userData={userData}/> : ''}
         <Routes>
-          <Route exact path={'/'} element={<MainPage setHeader={setHeader} />} />
-          <Route exact path={'/page2'} element={<PlayPages setHeader={setHeader} />} />
-          <Route exact path={'/room'} element={<Room setHeader={setHeader} />} />
+          <Route exact path={'/'} userData={userData} element={<MainPage setHeader={setHeader}/>} />
+          <Route exact path={'/page2'} userData={userData} element={<PlayPages setHeader={setHeader} userData={userData}/>} />
+          <Route exact path={'/room'} userData={userData} element={<Room setHeader={setHeader} userData={userData}/>} />
           
         </Routes>
-        {userData || '123'}
+  
         <Menu setHeader={setHeader}/>
       </div>
     </Router>
