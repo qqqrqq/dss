@@ -15,13 +15,14 @@ const tg = window.Telegram.WebApp
 
 function App() {
   const [header, setHeader] = useState(false)
-
+  const [userData, setUserData] = useState(null)
   useEffect(()=>{
     setHeader(false)
     tg.ready()
     tg.expand()
     tg.setHeaderColor('#000000')
-
+    const user= tg.initDataUnsafe?.user;
+    setUserData(user)
   },[])
 
 
@@ -36,6 +37,7 @@ function App() {
           <Route exact path={'/room'} element={<Room setHeader={setHeader} />} />
           
         </Routes>
+        {userData || '123'}
         <Menu setHeader={setHeader}/>
       </div>
     </Router>
